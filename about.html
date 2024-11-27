@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +21,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* About Section Layout */
         .about-content {
             display: flex;
             align-items: center;
@@ -58,7 +56,6 @@
             box-sizing: border-box;
         }
 
-        /* Text Content Styling */
         .about-text {
             max-width: 50%;
         }
@@ -87,7 +84,6 @@
             animation: fadeInUp 2s ease-out forwards;
         }
 
-        /* More Button */
         .more-button {
             display: inline-block;
             background: #FF6F61;
@@ -109,7 +105,6 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        /* Image Section */
         .about-image {
             max-width: 35%;
             animation: slideIn 2s ease-out forwards;
@@ -121,7 +116,6 @@
             box-shadow: 0 8px 20px rgba(2, 2, 2, 0.2);
         }
 
-        /* Arrow Navigation */
         .arrow-buttons {
             position: fixed;
             bottom: 30px;
@@ -144,7 +138,6 @@
             transform: scale(1.1);
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -173,7 +166,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -184,7 +176,6 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- About Section -->
     <div class="about-content">
         <!-- Text Content -->
         <div class="about-text">
@@ -200,32 +191,28 @@ I grew up and settled in Seri Manjung, Perak.
             </p>
             <a href="more.html" class="more-button">>click to see more<</a>
         </div>
-        <!-- Image Content -->
+
         <div class="about-image">
             <img src="C:\Users\Lenovo\Downloads\IMD318\photo1.jpg" alt="About Me Image">
         </div>
     </div>
 
-    <!-- Arrow Buttons -->
     <div class="arrow-buttons">
         <!-- Back Arrow -->
         <a href="index.html">
             <i class="fas fa-arrow-left"></i> <!-- Left Arrow -->
     </div>
 
-<!-- Music Control Button -->
     <button class="music-btn" id="musicButton">
         <i class="fas fa-volume-up"></i> <!-- Volume Icon -->
     </button>
 
-    <!-- Background Music -->
     <audio id="backgroundMusic"controls autoplay loop>
         <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
