@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +21,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* Home Section Layout */
         .home-content {
             display: flex;
             align-items: center;
@@ -70,7 +68,6 @@
             animation: colorChange 4s infinite;
     }
 
-    /* Color-Changing Animation */
     @keyframes colorChange {
         0% { color: #FF6F61; }
         25% { color: #FFC107; }
@@ -96,7 +93,6 @@
             animation: fadeInUp 2s ease-out forwards;
         }
 
-        /* Decorative Line */
         .decorative-line {
             width: 100px;
             height: 5px;
@@ -105,7 +101,6 @@
             animation: slideIn 2s ease-out forwards;
         }
 
-        /* Button */
         .cta-button {
             background: #FFD700;
             color: #4D4D4D;
@@ -126,7 +121,6 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        /* Music Control Button */
         .music-btn {
             position: fixed;
             bottom: 30px;
@@ -144,8 +138,6 @@
             color: #FFD700;
             transform: scale(1.2);
         }
-
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -174,7 +166,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -185,28 +176,24 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Home Section -->
     <div class="home-content">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to My Personal Website</h1>
         <h2>Where Creativity Meets Passion</h2>
-        <p>Explore my journey, skills, and experiences in this vibrant and modern portfolio. Together, let's create something amazing!</p>
+        <p>Explore my journey, skills, and experiences in this simple and modern website. Hope you like it!</p>
         <div class="decorative-line"></div>
         <a href="about.html" button class="cta-button">NEXT</button></a>
     </div>
 
-<!-- Music Control Button -->
     <button class="music-btn" id="musicButton">
-        <i class="fas fa-volume-up"></i> 
+        <i class="fas fa-volume-up"></i> <!-- Volume Icon -->
     </button>
 
-    <!-- Background Music -->
-    <audio id="backgroundMusic" controls autoplay loop>
-        <source src="C:\Users\Lenovo\Downloads\d1.m4a" type="audio/mpeg">
+    <audio id="backgroundMusic"controls autoplay loop>
+        <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
