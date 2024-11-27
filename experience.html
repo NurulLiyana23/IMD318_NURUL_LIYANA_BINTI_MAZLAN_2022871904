@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +21,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* Experience Section Layout */
         .experience-content {
             display: flex;
             flex-direction: column;
@@ -80,7 +78,6 @@
             animation: fadeInRight 1.8s ease-out forwards;
         }
 
-        /* Frames for Experience */
         .experience-frame {
             display: flex;
             justify-content: space-between;
@@ -91,7 +88,6 @@
             animation: slideUp 2s ease-out forwards; /* Slide-up effect */
         }
 
-        /* Individual Frame Styling */
         .frame {
             background: #FFF;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -126,7 +122,6 @@
             line-height: 1.8;
         }
 
-        /* Music Control Button */
         .music-btn {
             position: fixed;
             bottom: 30px;
@@ -145,7 +140,6 @@
             transform: scale(1.2);
         }
 
-        /* Arrow Navigation */
         .arrow-buttons {
             position: fixed;
             bottom: 30px;
@@ -168,7 +162,6 @@
             transform: scale(1.1);
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -192,7 +185,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -203,13 +195,12 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Experience Section -->
     <div class="experience-content">
         <div class="experience-title">
             <h1>My Experience</h1>
             <h2>What I've Done</h2>
-        </div>
-        <div class="experience-frame">
+            </div>
+            <div class="experience-frame">
             <!-- Job 1 -->
             <div class="frame">
                 <h3>Part-Time Dropship </h3>
@@ -231,31 +222,19 @@
         </div>
     </div>
 
-    <!-- Music Control Button -->
-    <button class="music-btn" id="musicButton">
-        <i class="fas fa-volume-up"></i> <!-- Volume Icon -->
-    </button>
-
-    <!-- Background Music -->
-    <audio id="backgroundMusic" controls autoplay loop>
-        <source src="C:\Users\Lenovo\Downloads\d1.m4a" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Arrow Buttons -->
     <div class="arrow-buttons">
         <!-- Back Arrow -->
         <a href="education.html">
             <i class="fas fa-arrow-left"></i> <!-- Left Arrow -->
         </a>
-        <!-- Next Arrow -->
-        <a href="skills.html">
-            <i class="fas fa-arrow-right"></i> <!-- Right Arrow -->
-        </a>
     </div>
 
+    <audio id="backgroundMusic"controls autoplay loop>
+        <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
