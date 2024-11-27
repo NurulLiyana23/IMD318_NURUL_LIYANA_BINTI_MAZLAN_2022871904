@@ -9,7 +9,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -20,7 +20,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8);
             padding: 15px;
@@ -47,7 +46,6 @@
             transform: scale(1.05);
         }
 
-        /* Gallery Section */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,7 +79,6 @@
             background: #000; /* Video placeholder background */
         }
 
-        /* Text Content Styling */
         .more-text {
             max-width: 80%;
             margin: 0 auto;
@@ -106,7 +103,6 @@
             animation: fadeInUp 2s ease-out forwards;
         }
 
-        /* Arrow Navigation */
         .arrow-buttons {
             position: fixed;
             bottom: 30px;
@@ -129,7 +125,6 @@
             transform: scale(1.1);
         }
 
-        /* Music Button */
         .music-btn {
             position: fixed;
             bottom: 100px;
@@ -169,7 +164,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -180,30 +174,23 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2 style="text-align: center; font-family: 'Playfair Display', serif; margin-top: 30px;">
-            My Gallery
         </h2>
         <div class="gallery">
             <!-- Video Item -->
             <div class="gallery-item">
-                <video src="C:/Users/Lenovo/Downloads/v1.mp4" autoplay muted loop playsinline controls></video>
+                <video src="C:/Users/Lenovo/Downloads/IMD318/v1.mp4" autoplay muted loop playsinline controls></video>
             </div>
 
-            <!-- Photo 1 -->
             <div class="gallery-item">
-                <img src="C:/Users/Lenovo/Downloads/s2.jpg" alt="Photo 1">
+                <img src="C:/Users/Lenovo/Downloads/IMD318/s2.jpg" alt="Photo 1">
             </div>
 
-            <!-- Photo 2 -->
             <div class="gallery-item">
-                <img src="C:/Users/Lenovo/Downloads/s1.jpg" alt="Photo 2">
+                <img src="C:/Users/Lenovo/Downloads/IMD318/s1.jpg" alt="Photo 2">
             </div>
         </div>
     </section>
 
-    <!-- Text Content -->
     <div class="more-text">
         <h1>My Hobbies & Interests</h1>
         <p>
@@ -214,31 +201,19 @@
         </p>
     </div>
 
-    <!-- Arrow Buttons -->
     <div class="arrow-buttons">
         <!-- Back Arrow -->
-        <a href="index.html">
+        <a href="about.html">
             <i class="fas fa-arrow-left"></i> <!-- Left Arrow -->
-        </a>
-        <!-- Next Arrow -->
-        <a href="more.html">
-            <i class="fas fa-arrow-right"></i> <!-- Right Arrow -->
-        </a>
+         </a>
     </div>
 
-<!-- Music Control Button -->
-    <button class="music-btn" id="musicButton">
-        <i class="fas fa-volume-up"></i> 
-    </button>
-
-    <!-- Background Music -->
-    <audio id="backgroundMusic" controls autoplay loop>
-        <source src="C:\Users\Lenovo\Downloads\d1.m4a" type="audio/mpeg">
+    <audio id="backgroundMusic"controls autoplay loop>
+        <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
