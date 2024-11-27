@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +21,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* Contact Section Layout */
         .contact-content {
             display: flex;
             flex-direction: column;
@@ -80,7 +78,6 @@
             animation: fadeInRight 1.8s ease-out forwards;
         }
 
-        /* Contact Form */
         .contact-form {
             display: flex;
             flex-direction: column;
@@ -122,7 +119,6 @@
             background-color: #D54B3D;
         }
 
-        /* Thank You GIF */
         .thank-you {
             display: none;
             margin-top: 50px;
@@ -139,7 +135,6 @@
             margin-bottom: 15px;
         }
 
-        /* Thank You for Visiting Section */
         .thank-you-visiting {
             text-align: center;
             margin-top: 50px;
@@ -154,7 +149,6 @@
             color: #FF6F61;
         }
 
-        /* Footer / Copyright */
         .footer {
             margin-top: 50px;
             text-align: center;
@@ -162,7 +156,6 @@
             color: #6A6A6A;
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -191,7 +184,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -200,16 +192,14 @@
         <a href="skills.html">Skills</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-    </div>
+   </div>
 
-    <!-- Contact Section -->
-    <div class="contact-content">
+        <div class="contact-content">
         <div class="contact-title">
             <h1>Contact Me</h1>
             <h2>Get in Touch</h2>
         </div>
 
-        <!-- Contact Form -->
         <form class="contact-form" id="contactForm">
             <input type="text" placeholder="Your Name" id="name" required>
             <input type="email" placeholder="Your Email" id="email" required>
@@ -217,19 +207,11 @@
             <button type="submit">Send Message</button>
         </form>
 
-        <!-- Thank You GIF -->
-        <div class="thank-you" id="thankYouMessage">
-            <img src="thank-you.gif" alt="Thank You">
-            <p>Thank you for reaching out!</p>
-        </div>
-
-        <!-- Thank You for Visiting Section -->
         <div class="thank-you-visiting">
             <p>Thank you for visiting!</p>
             <i class="fas fa-heart"></i>
         </div>
-
-        <!-- Footer -->
+        
         <div class="footer">
             <p>&copy; 2024 liyana. All rights reserved.</p>
             <p>Follow me on <a href="https://www.linkedin.com/in/nurul-liyana-4790652b5" target="_blank">LinkedIn</a></p>
@@ -238,14 +220,12 @@
 
     </button>
 
-    <!-- Background Music -->
     <audio id="backgroundMusic" controls autoplay loop>
         <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
@@ -259,8 +239,6 @@
             }
         });
 
-
-        // Handle form submission
         const form = document.getElementById('contactForm');
         const thankYouMessage = document.getElementById('thankYouMessage');
 
