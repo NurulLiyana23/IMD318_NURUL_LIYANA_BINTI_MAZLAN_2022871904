@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +20,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +46,6 @@
             transform: scale(1.05);
         }
 
-        /* Gallery Section Layout */
         .gallery-content {
             display: flex;
             flex-direction: column;
@@ -79,7 +76,6 @@
             animation: fadeInRight 1.8s ease-out forwards;
         }
 
-        /* Gallery Sections */
         .gallery-section {
             width: 100%;
             margin-top: 30px;
@@ -103,7 +99,6 @@
             animation: fadeInUp 2s ease-out forwards;
         }
 
-        /* Individual Frame Styling */
         .frame {
             width: 300px;
             height: 300px;
@@ -116,7 +111,6 @@
             animation: fadeInUp 2s ease-out forwards;
         }
 
-        /* Hover Effect */
         .frame:hover {
             transform: scale(1.05);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
@@ -141,7 +135,6 @@
             border-radius: 20px;
         }
 
-        /* Music Control Button */
         .music-btn {
             position: fixed;
             bottom: 30px;
@@ -160,7 +153,6 @@
             transform: scale(1.2);
         }
 
-        /* Arrow Navigation */
         .arrow-buttons {
             position: fixed;
             bottom: 30px;
@@ -183,7 +175,6 @@
             transform: scale(1.1);
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -207,7 +198,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -218,75 +208,64 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Gallery Section -->
     <div class="gallery-content">
         <div class="gallery-title">
             <h1>My Gallery</h1>
             <h2>Special Memories</h2>
         </div>
 
-        <!-- Family Pictures -->
         <div class="gallery-section">
             <div class="section-title">Family Pictures</div>
             <div class="gallery-frame">
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\f1.jpg" alt="Family Picture 1">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\f1.jpg" alt="Family Picture 1">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\f2.jpg" alt="Family Picture 2">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\f2.jpg" alt="Family Picture 2">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\f3.jpg" alt="Family Picture 3">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\f3.jpg" alt="Family Picture 3">
                 </div>
             </div>
         </div>
 
-        <!-- Friends Pictures -->
         <div class="gallery-section">
             <div class="section-title">Friends Pictures</div>
             <div class="gallery-frame">
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\e1.jpg" alt="Friends Picture 1">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\e1.jpg" alt="Friends Picture 1">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\e2.jpg" alt="Friends Picture 2">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\e2.jpg" alt="Friends Picture 2">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\e3.jpg" alt="Friends Picture 3">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\e3.jpg" alt="Friends Picture 3">
                 </div>
             </div>
         </div>
 
-        <!-- Uni Housemates -->
         <div class="gallery-section">
             <div class="section-title">Uni Housemates</div>
             <div class="gallery-frame">
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\h1.jpg" alt="Uni Housemates 1">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\h1.jpg" alt="Uni Housemates 1">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\h2.jpg" alt="Uni Housemates 2">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\h2.jpg" alt="Uni Housemates 2">
                 </div>
                 <div class="frame">
-                    <img src="C:\Users\Lenovo\Downloads\h3.jpg" alt="Uni Housemates 3">
+                    <img src="C:\Users\Lenovo\Downloads\IMD318\h3.jpg" alt="Uni Housemates 3">
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!-- Music Control Button -->
-    <button class="music-btn" id="musicButton">
-        <i class="fas fa-volume-up"></i> <!-- Volume Icon -->
-    </button>
-
-    <!-- Background Music -->
     <audio id="backgroundMusic" controls autoplay loop>
-        <source src="C:\Users\Lenovo\Downloads\d1.m4a" type="audio/mpeg">
+        <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- Arrow Buttons -->
     <div class="arrow-buttons">
         <!-- Back Arrow -->
         <a href="skills.html">
@@ -299,7 +278,6 @@
     </div>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
