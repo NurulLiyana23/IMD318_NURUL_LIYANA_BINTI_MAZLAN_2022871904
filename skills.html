@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Styles -->
     <style>
-        /* Base Style */
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,7 +21,6 @@
             animation: fadeIn 2s forwards;
         }
 
-        /* Navbar Styling */
         .navbar {
             background: rgba(174, 198, 207, 0.8); /* Transparent Navbar */
             padding: 15px;
@@ -48,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* Skills Section Layout */
         .skills-content {
             display: flex;
             flex-direction: column;
@@ -79,7 +77,6 @@
             animation: fadeInRight 1.8s ease-out forwards;
         }
 
-        /* Skills Frame Container */
         .skills-frame {
             display: flex;
             flex-wrap: wrap;
@@ -91,7 +88,6 @@
             animation: morphIn 2s ease-in-out forwards; /* Morph effect */
         }
 
-        /* Individual Frame Styling */
         .frame {
             background: #FFF;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -126,7 +122,6 @@
             line-height: 1.6;
         }
 
-        /* Music Control Button */
         .music-btn {
             position: fixed;
             bottom: 30px;
@@ -145,7 +140,6 @@
             transform: scale(1.2);
         }
 
-        /* Arrow Navigation */
         .arrow-buttons {
             position: fixed;
             bottom: 30px;
@@ -168,7 +162,6 @@
             transform: scale(1.1);
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -198,7 +191,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -209,68 +201,67 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Skills Section -->
     <div class="skills-content">
         <div class="skills-title">
             <h1>My Skills</h1>
             <h2>What I Excel At</h2>
         </div>
         <div class="skills-frame">
-            <!-- Microsoft Word -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii1.jpg" alt="Microsoft Word Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii1.jpg" alt="Microsoft Word Icon">
                 <h3>Microsoft Word</h3>
                 <p>Proficient in creating professional documents, reports, and proposals using advanced formatting tools in Microsoft Word.</p>
             </div>
-            <!-- Microsoft Excel -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii2.jpg" alt="Microsoft Excel Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii2.jpg" alt="Microsoft Excel Icon">
                 <h3>Microsoft Excel</h3>
                 <p>Skilled in data analysis, using formulas, pivot tables, and creating reports in Microsoft Excel for business insights.</p>
             </div>
-            <!-- Microsoft PowerPoint -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii3.jpg" alt="Microsoft PowerPoint Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii3.jpg" alt="Microsoft PowerPoint Icon">
                 <h3>Microsoft PowerPoint</h3>
                 <p>Experienced in creating visually appealing presentations with animations, transitions, and multimedia integration.</p>
             </div>
         </div>
 
         <div class="skills-frame">
-            <!-- Social Media Literacy -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii4.jpg" alt="Social Media Literacy Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii4.jpg" alt="Social Media Literacy Icon">
                 <h3>Social Media Literacy</h3>
                 <p>Proficient in managing social media platforms and engaging audiences effectively across various channels.</p>
             </div>
-            <!-- Photo Editing -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii5.jpg" alt="Photo Editing Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii5.jpg" alt="Photo Editing Icon">
                 <h3>Photo Editing</h3>
                 <p>Experienced with tools to enhance and manipulate images for personal and professional use.</p>
             </div>
-            <!-- Video Editing -->
+
             <div class="frame">
-                <img src="C:\Users\Lenovo\Downloads\iii6.jpg" alt="Video Editing Icon">
+                <img src="C:\Users\Lenovo\Downloads\IMD318\iii6.jpg" alt="Video Editing Icon">
                 <h3>Video Editing</h3>
                 <p>Skilled in editing videos for social media and other platforms, using various software.</p>
             </div>
         </div>
     </div>
 
-<!-- Music Control Button -->
-    <button class="music-btn" id="musicButton">
-        <i class="fas fa-volume-up"></i> <!-- Volume Icon -->
-    </button>
+    <div class="arrow-buttons">
+        <!-- Back Arrow -->
+        <a href="experience.html">
+            <i class="fas fa-arrow-left"></i> <!-- Left Arrow -->
+        </a>
+    </div>
 
-    <!-- Background Music -->
-    <audio id="backgroundMusic" controls autoplay loop>
-        <source src="C:\Users\Lenovo\Downloads\d1.m4a" type="audio/mpeg">
+    <audio id="backgroundMusic"controls autoplay loop>
+        <source src="C:\Users\Lenovo\Downloads\IMD318\d1.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        // Mute Button functionality
         const musicButton = document.getElementById('musicButton');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
